@@ -17,6 +17,7 @@ spec:
     - name: https
       protocol: HTTPS
       port: 443
+      hostname: ruddur.dev
       allowedRoutes:
         namespaces:
           from: All
@@ -24,5 +25,5 @@ spec:
         certificateRefs:
           - group: ""
             kind: Secret
-            name: lion7-dev-tls
+            name: ruddur-dev-tls
         mode: Terminate
