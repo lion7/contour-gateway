@@ -28,3 +28,16 @@ spec:
             kind: Secret
             name: ruddur-dev-tls
         mode: Terminate
+    - name: https-wildcard
+      protocol: HTTPS
+      port: 443
+      hostname: "*.ruddur.dev"
+      allowedRoutes:
+        namespaces:
+          from: All
+      tls:
+        certificateRefs:
+          - group: ""
+            kind: Secret
+            name: wildcard-ruddur-dev-tls
+        mode: Terminate
