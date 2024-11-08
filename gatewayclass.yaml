@@ -9,26 +9,3 @@ spec:
     group: projectcontour.io
     name: contour-ipv6
     namespace: projectcontour
----
-kind: ContourDeployment
-apiVersion: projectcontour.io/v1alpha1
-metadata:
-  namespace: projectcontour
-  name: contour-ipv6
-spec:
-  runtimeSettings:
-    health:
-      address: "::"
-    metrics:
-      address: "::"
-    xdsServer:
-      address: "::"
-    envoy:
-      http:
-        address: "::"
-      https:
-        address: "::"
-      health:
-        address: "::"
-      metrics:
-        address: "::"
