@@ -8,4 +8,4 @@ spec:
     kind: ContourDeployment
     group: projectcontour.io
     name: contour-ipv6
-    namespace: projectcontour
+    namespace: kube-system # TODO: should be projectcontour
